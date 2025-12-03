@@ -1,0 +1,14 @@
+class Student {
+public:
+    string id;
+    string name;
+    int age;
+
+    Student() {}
+
+    Student(string id, string name, int age) {
+        this->id = id;
+        this->name = name;
+        this->age = age;
+    }
+};
