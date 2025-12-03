@@ -1,0 +1,17 @@
+void searchStudent() {
+    string id;
+    cout << "\n--- Search Student ---\n";
+    cout << "Enter ID to search: ";
+    cin >> id;
+
+    for (auto &st : listStudent) {
+        if (st.id == id) {
+            cout << "Found:\n";
+            cout << "ID: " << st.id << "\n";
+            cout << "Name: " << st.name << "\n";
+            cout << "Age: " << st.age << "\n";
+            return;
+        }
+    }
+    cout << "Student not found!\n";
+}
