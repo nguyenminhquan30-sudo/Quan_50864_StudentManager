@@ -1,0 +1,9 @@
+// Hàm kiểm tra chuỗi rỗng (ID, Name)
+bool isEmptyString(const string &s) {
+    return s == "" || s.find_first_not_of(" \t") == string::npos;
+}
+
+// Hàm kiểm tra tuổi hợp lệ
+bool isValidAge(int age) {
+    return age > 0;
+}
